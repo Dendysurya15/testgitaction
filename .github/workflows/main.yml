@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: composer install --no-dev --prefer-dist --no-progress --no-interaction
 
+      - name: Update dependencies
+        run: composer update --no-dev --prefer-dist --no-progress --no-interaction
+
       - name: Build assets (if applicable)
         run: php artisan mix --production
 
