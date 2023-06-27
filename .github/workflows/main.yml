@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER_TEST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: / # Change this if your hosting environment has a different web root
