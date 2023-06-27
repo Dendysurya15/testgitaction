@@ -23,10 +23,7 @@ jobs:
 
       - name: Update dependencies
         run: composer update --no-dev --prefer-dist --no-progress --no-interaction
-
-      - name: Build assets (if applicable)
-        run: php artisan mix --production
-
+        
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
